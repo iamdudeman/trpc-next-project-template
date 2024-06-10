@@ -4,8 +4,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prettier": "npx prettier --check . --ignore-path .eslintignore",
-    "lint": "npx eslint --ext .js,.ts,.tsx ."
+    "check:all": "npm run check:lint && npm run check:prettier && npm run check:ts",
+    "check:prettier": "npx prettier --check . --ignore-path .gitignore",
+    "check:lint": "npx eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "check:ts": "npm run check:ts --ws",
+    "fix:prettier": "npx prettier --write ."
   },
   "dependencies": {
     "@tanstack/react-query": "~4.29.14",
