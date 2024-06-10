@@ -1,0 +1,11 @@
+meta {
+  name: incrementCount
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{domain}}/api/trpc/counter.incrementCount
+  body: none
+  auth: none
+}

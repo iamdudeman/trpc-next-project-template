@@ -1,0 +1,24 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.modalContent {
+  background-color: white;
+  border: solid black medium;
+  margin: 10% auto;
+  padding: 20px;
+  width: 60%;
+}
+
+.modalClose {
+  right: 5%;
+  position: absolute;
+  top: 5%;
+}

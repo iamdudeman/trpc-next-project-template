@@ -1,0 +1,17 @@
+meta {
+  name: setCount
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{domain}}/api/trpc/counter.setCount
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "newCount": 1
+  }
+}

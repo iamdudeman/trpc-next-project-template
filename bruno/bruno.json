@@ -1,0 +1,6 @@
+{
+  "version": "1",
+  "name": "trpc-next-project-template",
+  "type": "collection",
+  "ignore": ["node_modules", ".git"]
+}

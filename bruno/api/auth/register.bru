@@ -1,0 +1,18 @@
+meta {
+  name: register
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{domain}}/api/trpc/auth.register
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "new_user@test.com",
+      "password": "password"
+  }
+}

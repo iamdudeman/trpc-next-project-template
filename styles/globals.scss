@@ -1,0 +1,44 @@
+:root {
+  // css variables and such
+}
+
+* {
+  //margin: 0; // todo consider this later
+  //padding: 0; // todo consider this later
+  //list-style-position: inside; // todo consider this later
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  //color-scheme: dark light; // todo consider this later
+}
+
+body {
+  margin: 0; // todo consider removing when all margin/padding is removed above
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 0; // todo consider removing when all margin/padding is removed above
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  //font-size: 62.5%; // todo switch to this once more styling work begins instead of 16px
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}

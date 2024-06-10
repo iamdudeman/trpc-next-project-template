@@ -1,0 +1,89 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "plugins": ["react"],
+  "ignorePatterns": ["*.scss"],
+  "rules": {
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "comma-dangle": [
+      2,
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline"
+      }
+    ],
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "keyword-spacing": 2,
+    "linebreak-style": [2, "unix"],
+    "no-trailing-spaces": 2,
+    "quotes": [2, "double"],
+    "react/react-in-jsx-scope": "off",
+    "react/prefer-es6-class": 1,
+    "semi": [2, "always"],
+    "sort-imports": [
+      1,
+      {
+        "allowSeparatedGroups": true,
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+    "space-before-function-paren": [
+      2,
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "space-infix-ops": [
+      2,
+      {
+        "int32Hint": false
+      }
+    ],
+    "spaced-comment": [2, "always"],
+    "strict": [2, "safe"]
+  }
+}
