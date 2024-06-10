@@ -6,8 +6,8 @@
     "start": "next start",
     "check:all": "npm run check:lint && npm run check:prettier && npm run check:ts",
     "check:prettier": "npx prettier --check . --ignore-path .gitignore",
-    "check:lint": "npx eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
-    "check:ts": "npm run check:ts --ws",
+    "check:lint": "npx eslint --ignore-pattern \"next-env.d.ts\" --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "check:ts": "tsc",
     "fix:prettier": "npx prettier --write ."
   },
   "dependencies": {

@@ -14,13 +14,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "@components/*": ["components/*"],
-      "@dao/*": ["server/dao/*"],
-      "@router": ["server/router"],
-      "@routers/*": ["server/routers/*"],
-      "@services/*": ["server/services/*"],
-      "@trpc": ["utils/trpc"],
-      "@styles/*": ["styles/*"]
+      "@components/*": ["./components/*"],
+      "@dao/*": ["./server/dao/*"],
+      "@router": ["./server/router"],
+      "@routers/*": ["./server/routers/*"],
+      "@services/*": ["./server/services/*"],
+      "@trpc": ["./utils/trpc"],
+      "@styles/*": ["./styles/*"]
     },
     "strict": false
   },
