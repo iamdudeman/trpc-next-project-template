@@ -22,3 +22,14 @@ PGPASSWORD=admin
 JWT_SECRET=localsecret
 NODE_ENV=development
 ```
+
+## Local SMTP server
+
+Using [smtp4dev](https://github.com/rnwood/smtp4dev)
+
+```sh
+# Run localhost smtp server
+# UI port   - 3001
+# SMTP port - 587
+docker.exe run --rm -it -p 3001:80 -p 587:25 rnwood/smtp4dev
+```
