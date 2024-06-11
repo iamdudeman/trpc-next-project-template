@@ -15,10 +15,7 @@
     "jsx": "preserve",
     "paths": {
       "@components/*": ["./components/*"],
-      "@dao/*": ["./server/dao/*"],
-      "@router": ["./server/router"],
-      "@routers/*": ["./server/routers/*"],
-      "@services/*": ["./server/services/*"],
+      "@server/*": ["./server/*"],
       "@trpc": ["./utils/trpc"],
       "@styles/*": ["./styles/*"]
     },

@@ -1,4 +1,4 @@
-import { sql } from "@dao/db";
+import { sql } from "@server/dao/db";
 import { TRPCError } from "@trpc/server";
 
 class UsersDao {

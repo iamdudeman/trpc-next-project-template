@@ -1,6 +1,6 @@
 import { initTRPC, TRPCError } from "@trpc/server";
 import { Context } from "./createContext";
-import { authService } from "@services/authService";
+import { authService } from "@server/services/authService";
 import cookie from "cookie";
 
 const t = initTRPC.context<Context>().create();

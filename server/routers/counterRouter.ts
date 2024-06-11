@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { authProcedure, publicProcedure, router } from "@router";
+import { authProcedure, publicProcedure, router } from "@server/router";
 
 let count = 0;
 

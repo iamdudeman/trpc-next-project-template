@@ -1,4 +1,4 @@
-import { usersDao } from "@dao/UsersDao";
+import { usersDao } from "@server/dao/UsersDao";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import * as process from "process";

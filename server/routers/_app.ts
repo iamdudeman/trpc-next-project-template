@@ -1,6 +1,6 @@
-import { router } from "@router";
-import { counterRouter } from "@routers/counterRouter";
-import { authRouter } from "@routers/authRouter";
+import { router } from "@server/router";
+import { counterRouter } from "@server/routers/counterRouter";
+import { authRouter } from "@server/routers/authRouter";
 
 export const appRouter = router({
   auth: authRouter,
