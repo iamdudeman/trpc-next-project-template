@@ -35,7 +35,14 @@ class AuthService {
     return tokens;
   }
 
-  public async refresh(refreshToken: string) {
+  public async refresh(refreshToken: string | undefined) {
+    if (!refreshToken) {
+      throw new TRPCError({
+        message: "Refresh token is required",
+        code: "BAD_REQUEST",
+      });
+    }
+
     const userId = this.getUserIdFromToken(refreshToken);
     const user = await usersDao.selectUserById(userId);
 
