@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  devemailserver:
+    image: rnwood/smtp4dev
+    ports:
+      - 3001:80
+      - 587:25
+  server:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - devemailserver
+      - database
+    command: sh -c 'npm run dev'
+  database:
+    build:
+      context: database
+    ports:
+      - 5432:5432

@@ -8,7 +8,7 @@
 
 ```sh
 # Build db image (expose port 5432 when starting a container from this image via docker desktop)
-docker.exe build -f database/Dockerfile -t template_local_db database
+docker.exe build -f database/Dockerfile -t local_database database
 ```
 
 ## Backend dev .env
@@ -16,7 +16,7 @@ docker.exe build -f database/Dockerfile -t template_local_db database
 ```shell
 PGHOST=localhost
 PGPORT=5432
-PGDATABASE=template_local
+PGDATABASE=local_database
 PGUSER=admin
 PGPASSWORD=admin
 JWT_SECRET=localsecret
@@ -32,4 +32,10 @@ Using [smtp4dev](https://github.com/rnwood/smtp4dev)
 # UI port   - 3001
 # SMTP port - 587
 docker.exe run --rm -it -p 3001:80 -p 587:25 rnwood/smtp4dev
+```
+
+## Build full stack docker
+
+```sh
+docker-compose.exe up --build --force-recreate
 ```
