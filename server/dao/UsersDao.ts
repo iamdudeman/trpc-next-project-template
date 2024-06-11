@@ -3,7 +3,7 @@ import { TRPCError } from "@trpc/server";
 
 class UsersDao {
   public async selectUserByEmail(email: string) {
-    const results = await sql<dbUser[]>`
+    const results = await sql<DbTypes.Tables.Users[]>`
       SELECT *
       FROM users
       WHERE email = ${email}
@@ -20,7 +20,7 @@ class UsersDao {
   }
 
   public async selectUserById(id: string) {
-    const results = await sql<dbUser[]>`
+    const results = await sql<DbTypes.Tables.Users[]>`
       SELECT *
       FROM users
       WHERE id = ${id}
