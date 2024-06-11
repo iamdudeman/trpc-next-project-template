@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { authService } from "@services/AuthService";
+import { authService } from "@services/authService";
 import { authProcedure, publicProcedure, router } from "@router";
 import cookie from "cookie";
 import * as process from "process";
